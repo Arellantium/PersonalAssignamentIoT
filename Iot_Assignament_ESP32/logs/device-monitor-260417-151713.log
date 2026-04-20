@@ -1,0 +1,293 @@
+
+[LoRa] Inizializzazione Chip SX1262 (Heltec V3)...
+[LoRa] Radio pronta. Tentativo di JOIN OTAA su TTN...
+[LoRa] Tentativo di JOIN OTAA...
+
+==================================================
+Z-SCORE -> TPR:  11.13% | FPR:   0.00% | Tempo: 6147 us
+HAMPEL  -> TPR:  96.39% | FPR:   1.12% | Tempo: 10086 us
+==================================================
+
+[LoRa] JOIN FALLITO. Codice errore: -1118
+[LoRa] Suggerimento: Verifica che il Gateway sia nel raggio d'azione o sposta l'antenna.
+
+📡 [LoRa] Inviando il valore 1841 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:  80.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 499 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  50.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:  50.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 338 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 74 us
+HAMPEL  -> TPR:  50.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 274 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  50.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 147 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 67 us
+HAMPEL  -> TPR:  16.67% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 970 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  16.67% | FPR:   0.00% | Tempo: 64 us
+HAMPEL  -> TPR:  16.67% | FPR:   0.00% | Tempo: 78 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 809 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  50.00% | FPR:   0.00% | Tempo: 75 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 253 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  33.33% | FPR:   0.00% | Tempo: 74 us
+HAMPEL  -> TPR:  20.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 859 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 64 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 213 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 64 us
+HAMPEL  -> TPR:  66.67% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 265 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  75.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 259 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 72 us
+HAMPEL  -> TPR:  50.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 302 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  75.00% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 561 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 67 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 106 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  50.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:   0.00% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 107 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 64 us
+HAMPEL  -> TPR:  83.33% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 223 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  80.00% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 503 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 75 us
+HAMPEL  -> TPR:  33.33% | FPR:   0.00% | Tempo: 78 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 749 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR: 100.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 179 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  42.86% | FPR:   0.00% | Tempo: 79 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 805 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  66.67% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+❌ [LoRa] Errore di invio radio. Codice: -1116
+
+📡 [LoRa] Inviando il valore 330 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  50.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 159 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 72 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 84 us
+==================================================
+
+❌ [LoRa] Errore di invio radio. Codice: -7
+
+📡 [LoRa] Inviando il valore 148 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 64 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 157 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 70 us
+HAMPEL  -> TPR:  60.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 246 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 64 us
+HAMPEL  -> TPR:  12.50% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 656 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 238 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR: 100.00% | FPR:   0.00% | Tempo: 73 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 141 a The Things Network...
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+==================================================
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  75.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 206 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 68 us
+HAMPEL  -> TPR:  83.33% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+❌ [LoRa] Errore di invio radio. Codice: -1116
+
+📡 [LoRa] Inviando il valore 646 a The Things Network...
+
+==================================================
+Z-SCORE -> TPR:  20.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  20.00% | FPR:   0.00% | Tempo: 78 us
+==================================================
+
+✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+
+📡 [LoRa] Inviando il valore 638 a The Things Network...

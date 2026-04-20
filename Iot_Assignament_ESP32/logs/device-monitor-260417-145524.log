@@ -1,0 +1,3042 @@
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x80000001  A4      : 0x803805ed  A5      : 0x3fcf14e0  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x00060023  A9      : 0x80000000  
+A10     : 0x02c96920  A11     : 0x00ffffff  A12     : 0x8037841b  A13     : 0x3fcf14b0  
+A14     : 0x00000001  A15     : 0x3fcf4be0  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x80000001  A4      : 0x803805ed  A5      : 0x3fcf14e0  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x00060023  A9      : 0x80000000  
+A10     : 0x02c96920  A11     : 0x00ffffff  A12     : 0x8037841b  A13     : 0x3fcf14b0  
+A14     : 0x00000001  A15     : 0x3fcf4be0  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060c20  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060c20  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x00060023  
+A6      : 0x00060020  A7      : 0x00000001  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcbce60  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x00000014  A9      : 0x00000004  
+A10     : 0x3fcf4fd8  A11     : 0x80000001  A12     : 0x803805ed  A13     : 0x3fcb8b20  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x00000014  A9      : 0x00000004  
+A10     : 0x3fcf4fd8  A11     : 0x80000001  A12     : 0x803805ed  A13     : 0x3fcb8b20  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x00060023  
+A6      : 0x00060020  A7      : 0x00000001  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcbce60  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060820  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060820  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060e20  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060e20  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x00060023  
+A6      : 0x00060020  A7      : 0x00000001  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcbce60  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x00060023  
+A6      : 0x00060020  A7      : 0x00000001  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcbce60  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x00000014  A9      : 0x00000004  
+A10     : 0x3fcf4fd8  A11     : 0x80000001  A12     : 0x803805ed  A13     : 0x3fcb8b20  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x00000014  A9      : 0x00000004  
+A10     : 0x3fcf4fd8  A11     : 0x80000001  A12     : 0x803805ed  A13     : 0x3fcb8b20  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060c20  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060c20  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x00060023  
+A6      : 0x00060020  A7      : 0x00000001  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcbce60  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060c20  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060c20  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060c20  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001c  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001c  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x0000001a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060820  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+FAILURE 
+.pio/libdeps/heltec_wifi_lora_32_V3/MCCI LoRaWAN LMIC library/src/lmic/oslmic.c:53
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x42009c04  PS      : 0x00060a34  A0      : 0x82008d55  A1      : 0x3fcbcf60  
+A2      : 0x3c0918a4  A3      : 0x00000035  A4      : 0x3fcab530  A5      : 0x3fcf4780  
+A6      : 0x00060023  A7      : 0x00000003  A8      : 0x82009c04  A9      : 0x3fcbcf40  
+A10     : 0x3fcab530  A11     : 0x00000002  A12     : 0x0000000a  A13     : 0x3fcf4750  
+A14     : 0x00000001  A15     : 0x3fcbb120  SAR     : 0x00000018  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x42009c01:0x3fcbcf60 0x42008d52:0x3fcbcf80 0x42002f80:0x3fcbcfa0
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x40384d0f  PS      : 0x00020f34  A0      : 0x82038386  A1      : 0x3fcbcd70  
+A2      : 0x00020f23  A3      : 0xa5a5a5a5  A4      : 0x82038386  A5      : 0x00060f25  
+A6      : 0xfffbfff0  A7      : 0x00000046  A8      : 0x3fc97e58  A9      : 0x00000001  
+A10     : 0x60000000  A11     : 0x00000001  A12     : 0x0000000a  A13     : 0x3fcbcd5c  
+A14     : 0x00000001  A15     : 0x3fcf4e60  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40384d0c:0x3fcbcd70 0x42038383:0x3fcbcd80 0x42038985:0x3fcbcda0 0x420181de:0x3fcbcdc0 0x420184ba:0x3fcbce30 0x40377a09:0x3fcbce80 0x40377398:0x3fcbcea0 0x00040022:0x3fcbcf60 |<-CORRUPTED
+
+
+Core  1 register dump:
+PC      : 0x42081fd2  PS      : 0x00060634  A0      : 0x82017d09  A1      : 0x3fcf4e20  
+A2      : 0x00000000  A3      : 0x420723f0  A4      : 0x00060620  A5      : 0x3fceb9e0  
+A6      : 0x02c96920  A7      : 0x00ffffff  A8      : 0x803830e4  A9      : 0x3fcf4e00  
+A10     : 0x3fcec0c0  A11     : 0x3fc96920  A12     : 0x3fc96920  A13     : 0x00000000  
+A14     : 0x00060620  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x42081fcf:0x3fcf4e20 0x42017d06:0x3fcf4e40 0x4037e7e8:0x3fcf4e60
+
+
+
+
+ELF file SHA256: 1be286994a36315e
+
+Re-entered core dump! Exception happened during core dump!
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40377580
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x44c
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a80
+entry 0x403c98d0
+
+[START] Acquisizione 5000 campioni a 1000 Hz...

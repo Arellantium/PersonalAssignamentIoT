@@ -1,0 +1,96 @@
+
+[LoRa] Inizializzazione Chip SX1262 (Heltec V3)...
+[LoRa] Radio pronta. Tentativo di JOIN OTAA su TTN...
+[LoRa] Tentativo di JOIN OTAA...
+
+==================================================
+Z-SCORE -> TPR:  13.28% | FPR:   0.00% | Tempo: 6148 us
+HAMPEL  -> TPR:  94.45% | FPR:   1.17% | Tempo: 10161 us
+==================================================
+
+[LoRa] JOIN FALLITO. Codice errore: -1116
+[LoRa] Suggerimento: Verifica che il Gateway sia nel raggio d'azione o sposta l'antenna.
+
+📡 [LoRa] Inviando il valore 2240 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:  16.67% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:   0.00% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 506 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 75 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 195 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 76 us
+HAMPEL  -> TPR:  50.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 557 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:  42.86% | FPR:   0.00% | Tempo: 77 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 310 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  75.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 286 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:  14.29% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:  83.33% | FPR:   0.00% | Tempo: 78 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 241 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:  20.00% | FPR:   0.00% | Tempo: 75 us
+HAMPEL  -> TPR:  75.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 209 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:  33.33% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 199 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101
+
+==================================================
+Z-SCORE -> TPR:  16.67% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:  66.67% | FPR:   0.00% | Tempo: 76 us
+==================================================
+
+
+📡 [LoRa] Inviando il valore 234 a The Things Network...
+❌ [LoRa] Errore di invio radio. Codice: -1101

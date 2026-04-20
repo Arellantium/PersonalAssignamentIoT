@@ -1,0 +1,342 @@
+
+[START] Acquisizione 5000 campioni a 1000 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 615 su 4096 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  10.24% | FPR:   0.00% | Tempo: 6134 us
+HAMPEL  -> TPR:  96.42% | FPR:   1.18% | Tempo: 10103 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 5.00 Hz
+Freq. FFT Segnale Pulito : 5.00 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 5 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  20.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:  60.00% | FPR:   5.00% | Tempo: 84 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 1.88 Hz
+Freq. FFT Segnale Pulito : 1.46 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 2 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  50.00% | FPR:   0.00% | Tempo: 72 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 77 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 2.99 Hz
+Freq. FFT Segnale Pulito : 3.13 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 4 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 70 us
+HAMPEL  -> TPR:  66.67% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 4.62 Hz
+Freq. FFT Segnale Pulito : 0.40 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 7 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  60.00% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 1.66 Hz
+Freq. FFT Segnale Pulito : 3.15 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 9 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  22.22% | FPR:   0.00% | Tempo: 73 us
+HAMPEL  -> TPR:  12.50% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 1.20 Hz
+Freq. FFT Segnale Pulito : 1.30 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 6 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:  16.67% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 4.85 Hz
+Freq. FFT Segnale Pulito : 1.19 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 6 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 75 us
+HAMPEL  -> TPR:  20.00% | FPR:   0.00% | Tempo: 84 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 3.00 Hz
+Freq. FFT Segnale Pulito : 0.27 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 6 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  16.67% | FPR:   0.00% | Tempo: 79 us
+HAMPEL  -> TPR:  80.00% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 3.22 Hz
+Freq. FFT Segnale Pulito : 2.97 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 4 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 69 us
+HAMPEL  -> TPR:  75.00% | FPR:   0.00% | Tempo: 83 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 2.29 Hz
+Freq. FFT Segnale Pulito : 2.99 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 7 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 73 us
+HAMPEL  -> TPR:  16.67% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 4.11 Hz
+Freq. FFT Segnale Pulito : 3.19 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 4 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 65 us
+HAMPEL  -> TPR:  25.00% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 1.92 Hz
+Freq. FFT Segnale Pulito : 0.94 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 6 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 74 us
+HAMPEL  -> TPR:  40.00% | FPR:   0.00% | Tempo: 77 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 1.91 Hz
+Freq. FFT Segnale Pulito : 0.37 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 6 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 69 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 77 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 3.04 Hz
+Freq. FFT Segnale Pulito : 3.06 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 3 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  33.33% | FPR:   0.00% | Tempo: 69 us
+HAMPEL  -> TPR:   0.00% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 3.05 Hz
+Freq. FFT Segnale Pulito : 3.05 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 4 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  25.00% | FPR:   0.00% | Tempo: 73 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 75 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 3.19 Hz
+Freq. FFT Segnale Pulito : 3.13 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 5 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  20.00% | FPR:   0.00% | Tempo: 73 us
+HAMPEL  -> TPR:  75.00% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 3.70 Hz
+Freq. FFT Segnale Pulito : 3.18 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 5 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  20.00% | FPR:   0.00% | Tempo: 66 us
+HAMPEL  -> TPR:  60.00% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 3.09 Hz
+Freq. FFT Segnale Pulito : 1.38 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 3 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:  66.67% | FPR:   0.00% | Tempo: 72 us
+HAMPEL  -> TPR: 100.00% | FPR:   0.00% | Tempo: 78 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 4.86 Hz
+Freq. FFT Segnale Pulito : 3.07 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...
+
+==================================================
+             REPORT METRICHE (BONUS)              
+==================================================
+Config: P(Anomalia)=15% | Finestra Hampel=7
+Anomalie Iniettate: 8 su 32 campioni
+--------------------------------------------------
+Z-SCORE -> TPR:   0.00% | FPR:   0.00% | Tempo: 68 us
+HAMPEL  -> TPR:  16.67% | FPR:   0.00% | Tempo: 76 us
+--------------------------------------------------
+IMPATTO SULLA FFT (Dominant Frequency):
+Freq. FFT Segnale Sporco : 0.55 Hz
+Freq. FFT Segnale Pulito : 0.51 Hz
+==================================================
+
+
+[START] Acquisizione 49 campioni a 10 Hz...

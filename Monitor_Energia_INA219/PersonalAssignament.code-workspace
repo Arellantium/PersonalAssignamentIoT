@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../magistrale/IoT/PersonalAssignament"
+		},
+		{
+			"name": "Iot_Assignament_ESP32",
+			"path": "../Iot_Assignament_ESP32"
+		},
+		{
+			"name": "Monitor_Energia_INA219",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
