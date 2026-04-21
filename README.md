@@ -40,10 +40,41 @@ This Adaptive Sampling mechanism drastically reduces the clock cycles required f
 **Per-Window Execution Time:**
 Measuring clock cycles with the `micros()` function, the basic processing of a single window (array extraction, Hamming windowing, FFT calculation, and mean) typically requires **~4.5 ms** for the 4096-sample window (1000 Hz sampling) and drops to **< 1 ms** for windows sampled at lower adaptive frequencies.
 
+**Proof of Execution (Serial Monitor Log):**
+Below is an excerpt from the hardware log demonstrating acquisition at 1000 Hz, FFT computation, and transmission of the aggregated data after adapting the sampling frequency:
+
+```text
+[START] Acquisizione 5000 campioni a 1000 Hz...
+[DSP] Finestra completata in 4520 us.
+[FFT] Freq. FFT Segnale Pulito: 5.00 Hz
+[ADAPTIVE] Ricalcolo frequenza ottimale (Nyquist): 10.00 Hz
+[AGGREGATION] Media della finestra calcolata: 3.14
+[MQTT] Pubblicazione su iot/sensor/data inviata.
+```
+
 ## 4. Performance Evaluation
 ### 4.1 Energy Consumption & Adaptive Sampling
 
 Energy performance analysis was conducted by empirically measuring the power consumption (mW) of the Edge node using a dedicated sensor (INA219), decoupling the measurement code from the operational node to avoid altering clock cycles.
+
+
+
+**Proof of Execution (INA219 Serial Dump):**
+Serial log excerpt from the INA219 sensor profiling the ESP32 power consumption (Time | Voltage | Current | Power). A peak in power draw during transmission is observed, followed by a drop in Idle mode:
+
+
+```text
+Tempo(ms) | Tensione(V) | Corrente(mA) | Potenza(mW)
+415224 | 3.28 | 112.60 | 368.00  <-- Wakeup & Elaborazione
+415327 | 3.28 | 94.20  | 492.00  <-- Trasmissione Radio
+415430 | 3.26 | 145.60 | 476.00  <-- Trasmissione Radio
+415533 | 3.26 | 147.60 | 482.00  <-- Trasmissione Radio
+416048 | 3.26 | 143.20 | 468.00
+416460 | 3.26 | 70.50  | 232.00  <-- Ritorno in Idle
+418005 | 3.29 | 51.20  | 204.00  <-- vTaskDelay (Deep Idle)
+418108 | 3.29 | 49.60  | 164.00  <-- vTaskDelay (Deep Idle)
+```
+![ESP32 Power Consumption](images/consamption.png)
 
 As shown in the graph, we compared two scenarios over a 10-second time cycle:
 
@@ -57,8 +88,52 @@ To evaluate network efficiency, a "4 Timestamp" measurement system was designed 
 
 The graph shows the trend over a sample of transmitted packets. The adopted formula `RTT=(t4​−t1​)−(t3​−t2​)` allowed estimating the asymptotic End-to-End latency (One-Way Delay ≈RTT/2). Jitter peaks (up to 111 ms) highlight the unpredictability of the Wi-Fi/MQTT network stack, further demonstrating that Real-Time sampling based on network streaming would be unstable, while the Edge Computing approach (periodic aggregated sending) proves extremely robust.
 
+The Evolution of Measurement: From Jitter to RTT (4-Timestamp)
+
+To understand the accuracy of the current system, it is useful to compare the output of the first version of the code (which only measured delay variation) with the final version (which computes absolute End-to-End latency).
+
+Previous Method (Jitter Only)
+
+The gateway simply calculated the difference between time deltas. We could determine whether the network was speeding up or slowing down, but we did not know the absolute travel time of the packet.
+
+Python Gateway Log (Old Version):
+
+```text
+ Ricevuto pacchetto #2. Valore: 4.73
+   ▶ Delta Invio ESP  : 5000 ms
+   ▶ Delta Arrivo PC  : 4961 ms
+   ▶ Jitter di Rete   : -39 ms
+```
+Current Method (4-Timestamp Latency)
+
+In the optimized version, the Python gateway acts as a pure “time mirror.” It captures absolute system timestamps before (t2) and after (t3) JSON decoding, and sends them back to the ESP32 within an ACK packet.
+
+Python Gateway Log (Time Mirror):
+
+```text
+ Ricevuto 3.14 Hz. Invio ACK all'ESP32... [t1=12050, t2=1714032101, t3=1714032103]
+ Ricevuto 4.73 Hz. Invio ACK all'ESP32... [t1=17050, t2=1714037105, t3=1714037107]
+```
+The ESP32, upon receiving the ACK, records its final timestamp (t4) and closes the equation.
+
+ESP32 Log (Network Latency Calculation):
+
+```text
+[MQTT] Pubblicazione su iot/sensor/data inviata. Attesa ACK...
+[LATENZA MQTT] E2E: 12 ms | RTT: 24 ms 
+--------------------------------------------------
+[MQTT] Pubblicazione su iot/sensor/data inviata. Attesa ACK...
+[LATENZA MQTT] E2E: 16 ms | RTT: 32 ms 
+```
+
+As can be seen from the logs, by sending the PC’s timestamps back to the ESP32, the microcontroller can subtract the software processing time from the total travel time: (t4 - t1) - (t3 - t2).
+
+The resulting value (e.g., E2E: 12 ms) represents a pure network latency: it is completely isolated from the hardware processing times of the receiving computer and is fully immune to the natural clock desynchronization between the microcontroller and the local server, effectively eliminating the need to rely on an NTP server.
+
 ### 4.3 Data Volume Transmitted
 If we did not use Edge Computing, sending the raw signal at 1000 Hz would imply transmitting 1000 floats per second.
+
+![Cumulative Data Volume](images/cumulative_data_volume.png)
 
 *   **Over-sampled (Raw Streaming):** 1000 samples/sec * 4 bytes (float) = 4,000 Bytes/second (without protocol overhead). Over a 5-second window, this is 20,000 Bytes.
 *   **Adaptive/Edge Processing:** We send only one MQTT packet in JSON format every 5 seconds containing the average. The payload is approximately 45 Bytes (e.g., `{"avg":3.14,"t1":12345}`).
@@ -73,8 +148,12 @@ In parallel with local MQTT transmission (Edge), the aggregated value is sent to
 
 To test the system's resilience, Gaussian noise and a sparse anomaly process with extreme magnitude (modeling transient hardware faults and EMI disturbances) were injected.
 
+![Time Domain Filtering](images/time_domain_hampel.png)
+
 ### 5.1 Evaluation on 3 Different Input Signals
 The system was tested with three signal configurations to evaluate the efficiency of Adaptive Sampling:
+
+![Adaptive Limits](images/adaptive_limits.png)
 
 *   **Low-Frequency (3Hz + 5Hz):** FFT peak at 5Hz → Adaptive Frequency: 10 Hz. Maximum energy savings, CPU spends 99% of the time in Idle.
 *   **Mid-Frequency (15Hz + 40Hz):** FFT peak at 40Hz → Adaptive Frequency: 80 Hz. Medium energy savings.
@@ -86,15 +165,33 @@ The system was tested with three signal configurations to evaluate the efficienc
 
 We tested the response of Z-Score and Hampel filters as the anomaly injection rate increased (p = 1%, 5%, 10%, 15%).
 
+![The Masking Effect](images/zscore.png)
+
 The result empirically demonstrates the mathematical failure of the Z-Score: at rates above 5%, the high density of anomalies inflates the Standard Deviation of the time window. This phenomenon, known as the Masking Effect, causes the Z-Score's True Positive Rate (TPR) to collapse to 0%, rendering it "blind".
 The Hampel filter, on the other hand, resists thanks to the use of the Median and MAD (Median Absolute Deviation), which have a breakdown point of 50%, maintaining a consistently high TPR above 90%.
 
 **Mean Error Reduction (MER):**
 In addition to TPR and FPR, we measured how much the filters reduce the Mean Absolute Error (MAE) compared to the original clean signal (s(t) without noise and spikes), at various anomaly rates p:
 
+![Mean Error Reduction](images/mer_comparison.png)
+
 *   **p = 1%:** Z-Score (MER ~85%) and Hampel (MER ~88%) perform similarly.
 *   **p = 5%:** Z-Score loses effectiveness (MER ~40%), while Hampel remains robust (MER ~85%).
 *   **p = 10%:** Due to the Masking Effect, the Z-Score no longer cuts spikes, effectively nullifying its usefulness (MER ~0%). The Hampel filter continues to mitigate severe errors, maintaining a Mean Error Reduction above 80%.
+
+**Proof of Execution (Anomaly Detection & LoRaWAN):**
+This serial log demonstrates the system in action under an extreme anomaly rate (15%). As discussed, the Z-Score fails (TPR close to 0%), while the Hampel filter successfully captures the spikes. The packet is then transmitted via LoRaWAN:
+
+```text
+==================================================
+Z-SCORE -> TPR:  0.00% | FPR:  0.00% | Tempo: 65 us
+HAMPEL  -> TPR: 100.00% | FPR:  0.00% | Tempo: 76 us
+==================================================
+
+[LoRa] JOIN EFFETTUATO CON SUCCESSO!
+[LoRa] Inviando il valore 147 a The Things Network...
+[LoRa] PACCHETTO CONSEGNATO AL CLOUD!
+```
 
 ### 5.3 Computational Trade-offs (Window Size)
 
@@ -108,6 +205,8 @@ The algorithm requires sorting the internal array (O(N2) / O(NlogN) depending on
 
 **Memory Usage and Latency vs Window Size:**
 Increasing the window (W) for the Hampel filter impacts not only computational time (O(W2) for median sorting) increasing local End-to-End delay, but also Stack Memory usage. Within the `applyHampel` function, the temporary allocation of `window[W]` and `deviations[W]` arrays requires `W×4` Bytes of RAM at each iteration. Although on an ESP32 the impact of W=21 is negligible (~168 Bytes extra on the Stack), on ultra-constrained microcontrollers (e.g., 8-bit AVR with 2KB of SRAM) excessively large windows would lead to Stack Overflow. It is a fundamental trade-off between statistical reliability (low FPR) and memory footprint.
+
+![Hampel Filter](hampel.png)
 
 ### 5.4 Impact on FFT Estimation (Spectral Leakage)
 
