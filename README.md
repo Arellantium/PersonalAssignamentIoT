@@ -148,12 +148,12 @@ In parallel with local MQTT transmission (Edge), the aggregated value is sent to
 
 To test the system's resilience, Gaussian noise and a sparse anomaly process with extreme magnitude (modeling transient hardware faults and EMI disturbances) were injected.
 
-![Time Domain Filtering](images/time_domain_hampel.png)
+![Time Domain Filtering](images/time_domain_hempel.png)
 
 ### 5.1 Evaluation on 3 Different Input Signals
 The system was tested with three signal configurations to evaluate the efficiency of Adaptive Sampling:
 
-![Adaptive Limits](images/adaptive_limit.png)
+![Adaptive Limits](images/adaptives_limit.png)
 
 *   **Low-Frequency (3Hz + 5Hz):** FFT peak at 5Hz → Adaptive Frequency: 10 Hz. Maximum energy savings, CPU spends 99% of the time in Idle.
 *   **Mid-Frequency (15Hz + 40Hz):** FFT peak at 40Hz → Adaptive Frequency: 80 Hz. Medium energy savings.
@@ -206,7 +206,7 @@ The algorithm requires sorting the internal array (O(N2) / O(NlogN) depending on
 **Memory Usage and Latency vs Window Size:**
 Increasing the window (W) for the Hampel filter impacts not only computational time (O(W2) for median sorting) increasing local End-to-End delay, but also Stack Memory usage. Within the `applyHampel` function, the temporary allocation of `window[W]` and `deviations[W]` arrays requires `W×4` Bytes of RAM at each iteration. Although on an ESP32 the impact of W=21 is negligible (~168 Bytes extra on the Stack), on ultra-constrained microcontrollers (e.g., 8-bit AVR with 2KB of SRAM) excessively large windows would lead to Stack Overflow. It is a fundamental trade-off between statistical reliability (low FPR) and memory footprint.
 
-![Hampel Filter](hampel_filter.png)
+![Hampel Filter](images/hampel_filter.png)
 
 ### 5.4 Impact on FFT Estimation (Spectral Leakage)
 
