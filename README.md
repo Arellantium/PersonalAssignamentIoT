@@ -133,7 +133,7 @@ The resulting value (e.g., E2E: 12 ms) represents a pure network latency: it is 
 ### 4.3 Data Volume Transmitted
 If we did not use Edge Computing, sending the raw signal at 1000 Hz would imply transmitting 1000 floats per second.
 
-![Cumulative Data Volume](images/cumulative_data_volume.png)
+![Cumulative Data Volume](images/edgecomputing.png)
 
 *   **Over-sampled (Raw Streaming):** 1000 samples/sec * 4 bytes (float) = 4,000 Bytes/second (without protocol overhead). Over a 5-second window, this is 20,000 Bytes.
 *   **Adaptive/Edge Processing:** We send only one MQTT packet in JSON format every 5 seconds containing the average. The payload is approximately 45 Bytes (e.g., `{"avg":3.14,"t1":12345}`).
@@ -153,7 +153,7 @@ To test the system's resilience, Gaussian noise and a sparse anomaly process wit
 ### 5.1 Evaluation on 3 Different Input Signals
 The system was tested with three signal configurations to evaluate the efficiency of Adaptive Sampling:
 
-![Adaptive Limits](images/adaptive_limits.png)
+![Adaptive Limits](images/adaptive_limit.png)
 
 *   **Low-Frequency (3Hz + 5Hz):** FFT peak at 5Hz → Adaptive Frequency: 10 Hz. Maximum energy savings, CPU spends 99% of the time in Idle.
 *   **Mid-Frequency (15Hz + 40Hz):** FFT peak at 40Hz → Adaptive Frequency: 80 Hz. Medium energy savings.
@@ -173,7 +173,7 @@ The Hampel filter, on the other hand, resists thanks to the use of the Median an
 **Mean Error Reduction (MER):**
 In addition to TPR and FPR, we measured how much the filters reduce the Mean Absolute Error (MAE) compared to the original clean signal (s(t) without noise and spikes), at various anomaly rates p:
 
-![Mean Error Reduction](images/mer_comparison.png)
+![Mean Error Reduction](images/mer.png)
 
 *   **p = 1%:** Z-Score (MER ~85%) and Hampel (MER ~88%) perform similarly.
 *   **p = 5%:** Z-Score loses effectiveness (MER ~40%), while Hampel remains robust (MER ~85%).
@@ -206,7 +206,7 @@ The algorithm requires sorting the internal array (O(N2) / O(NlogN) depending on
 **Memory Usage and Latency vs Window Size:**
 Increasing the window (W) for the Hampel filter impacts not only computational time (O(W2) for median sorting) increasing local End-to-End delay, but also Stack Memory usage. Within the `applyHampel` function, the temporary allocation of `window[W]` and `deviations[W]` arrays requires `W×4` Bytes of RAM at each iteration. Although on an ESP32 the impact of W=21 is negligible (~168 Bytes extra on the Stack), on ultra-constrained microcontrollers (e.g., 8-bit AVR with 2KB of SRAM) excessively large windows would lead to Stack Overflow. It is a fundamental trade-off between statistical reliability (low FPR) and memory footprint.
 
-![Hampel Filter](hampel.png)
+![Hampel Filter](hampel_filter.png)
 
 ### 5.4 Impact on FFT Estimation (Spectral Leakage)
 
