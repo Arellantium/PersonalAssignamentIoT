@@ -84,9 +84,7 @@ As shown in the graph, we compared two scenarios over a 10-second time cycle:
 
 ### 4.2 Network Latency and Jitter
 
-To evaluate network efficiency, a "4 Timestamp" measurement system was designed to isolate network-introduced delays (RTT and Jitter) by bypassing clock desynchronization issues between the ESP32 and the Server (absence of NTP).
-
-The graph shows the trend over a sample of transmitted packets. The adopted formula `RTT=(t4​−t1​)−(t3​−t2​)` allowed estimating the asymptotic End-to-End latency (One-Way Delay ≈RTT/2). Jitter peaks (up to 111 ms) highlight the unpredictability of the Wi-Fi/MQTT network stack, further demonstrating that Real-Time sampling based on network streaming would be unstable, while the Edge Computing approach (periodic aggregated sending) proves extremely robust.
+To evaluate network efficiency, a "4 Timestamp" measurement system was designed to isolate network-introduced delays (RTT) by bypassing clock desynchronization issues between the ESP32 and the Server (absence of NTP).
 
 The Evolution of Measurement: From Jitter to RTT (4-Timestamp)
 
@@ -159,7 +157,7 @@ The system was tested with three signal configurations to evaluate the efficienc
 *   **Mid-Frequency (15Hz + 40Hz):** FFT peak at 40Hz → Adaptive Frequency: 80 Hz. Medium energy savings.
 *   **High-Frequency (100Hz + 250Hz):** FFT peak at 250Hz → Adaptive Frequency: 500 Hz. Idle time drastically reduces, consumption approaches that of baseline 1000 Hz sampling.
 
-**Discussion:** Adaptive Sampling offers enormous benefits for slow signals (e.g., temperature, pressure), while for very fast signals (e.g., high-frequency vibrations), the system must operate almost in continuous over-sampling to comply with Nyquist, effectively nullifying the potential for energy saving.
+Adaptive Sampling offers enormous benefits for slow signals (e.g., temperature, pressure), while for very fast signals (e.g., high-frequency vibrations), the system must operate almost in continuous over-sampling to comply with Nyquist, effectively nullifying the potential for energy saving.
 
 ### 5.2 The "Masking Effect": Z-Score vs Hampel Filter
 
@@ -210,21 +208,23 @@ Increasing the window (W) for the Hampel filter impacts not only computational t
 
 ### 5.4 Impact on FFT Estimation (Spectral Leakage)
 
-Why filter data before FFT? The following graph shows the dominant frequency reading by the Cooley-Tukey FFT algorithm in the three scenarios.
+Why filter data before FFT?
 
-Without the use of the Hampel filter (red bar), sudden voltage variations in the time domain translate into spurious high-frequency harmonics in the frequency domain (Spectral Leakage). The FFT algorithm is misled, estimating unrealistic dominants (e.g., > 300 Hz instead of 5.0 Hz).
+Without the use of the Hampel filter, sudden voltage variations in the time domain translate into spurious high-frequency harmonics in the frequency domain (Spectral Leakage). The FFT algorithm is misled, estimating unrealistic dominants (e.g., > 300 Hz instead of 5.0 Hz).
 This defect would compromise the Adaptive Sampling logic: the ESP32 would be forced to restore very high sampling frequencies (Nyquist on false harmonics), completely nullifying the energy savings illustrated in section 4.1. Hampel pre-filtering therefore proves essential for system stability.
 
 ## 6. LLM Integration: Opportunities and Limitations
 The use of Large Language Models significantly accelerated the drafting of boilerplate for network connections (MQTT) and JSON manipulation. However, the process highlighted critical limitations in the LLM's understanding of the severe constraints of an Embedded Real-Time system.
 
 ### Series of Prompts Issued:
-To arrive at the final solution, the following prompt chain was used:
+To arrive at the final solution, the LLM was guided through an iterative process covering different architectural domains of the project:
 
-1.  **Initial Generation:** "Write an ESP32 C++ code that samples a composite signal at 1000Hz using a hardware timer interrupt, calculates the FFT, and adapts the sampling frequency to optimize energy."
-2.  **Fixing WDT Crash:** "The generated code causes a Guru Meditation Error (Interrupt wdt timeout on CPU0) because the sin() function and FFT are inside the ISR. How can I restructure this using FreeRTOS tasks and queues to offload the ISR?"
-3.  **Memory Optimization:** "Now I get an assert failed: block_locate_free error after a few minutes. I am allocating large double arrays with malloc inside the task while loop. How can I fix this Heap Fragmentation issue?"
+1. **Base Architecture (RTOS & DSP):** "Write an ESP32 C++ FreeRTOS application that samples a composite signal, applies a Cooley-Tukey FFT to find the dominant frequency, and dynamically adjusts the hardware timer sampling rate to minimize energy consumption."
+2. **Anomaly Filtering (Hampel):** "I need to pre-filter the data before the FFT to avoid Spectral Leakage. Can you provide a highly optimized C++ implementation of the Hampel filter using a moving median and MAD, avoiding dynamic memory allocation in the loop to prevent Heap Fragmentation?"
+3. **Network Profiling (Latency):** "How can I accurately measure the End-to-End network latency between the ESP32 and a Python MQTT broker without relying on NTP clock synchronization? Suggest a 4-timestamp approach."
+4. **Cloud Migration (LoRaWAN):** "The standard MCCI LMIC library is failing with a runtime assert error on the Heltec V3 because it uses an SX1262 chip. How can I migrate the LoRaWAN OTAA join sequence to use RadioLib, and how should I pack a float average into a 2-byte payload to respect TTN duty cycles?"
 
 ### Critical Analysis and Limitations:
-During Phase 2, the code generated by the LLM invoked the floating-point trigonometric function `sin()` directly within the hardware timer's Interrupt Service Routine (ISR). On ESP32 microcontrollers, this incurs a huge cost in clock cycles within a critical block, triggering a `Guru Meditation Error (Interrupt wdt timeout)` caused by the Watchdog.
-The LLM lacked "situational awareness" regarding hardware execution time. Through successive iterations and by feeding the LLM the ESP32 crash logs, the logic was re-architected following RTOS best practices: moving the heavy computational payload into `vTaskProcess`, keeping interrupts and message queues as lean as possible.
+While the LLM provided excellent theoretical algorithms, it consistently failed to recognize hardware execution constraints. For instance, during the initial generation phase, the code generated by the LLM invoked the floating-point trigonometric function `sin()` and heavy array manipulations directly within the hardware timer's Interrupt Service Routine (ISR). 
+
+On ESP32 microcontrollers, this incurs a huge cost in clock cycles within a critical block, immediately triggering a `Guru Meditation Error (Interrupt wdt timeout)` caused by the Watchdog. The LLM lacked "situational awareness" regarding real-time hardware execution. Through successive iterations and by feeding the LLM the ESP32 crash logs, the logic had to be manually re-architected following RTOS best practices: moving the heavy computational payload into the asynchronous `vTaskProcess`, and keeping interrupts and message queues as lean as possible.
