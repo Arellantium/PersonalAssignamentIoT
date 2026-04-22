@@ -10,7 +10,7 @@
 
 // --- CONFIGURAZIONE RETE WI-FI ---
 const char* ssid = "Alessandro";
-const char* password = "S3rg1*ad";
+const char* password = "";
 const char* mqtt_server = "172.20.10.2";
 
 // =========================================================
@@ -155,9 +155,9 @@ void vTaskLoRa(void * pvParameters) {
             state = node.sendReceive(loraPayload, 2);
 
             if (state == RADIOLIB_ERR_NONE || state == RADIOLIB_LORAWAN_NONCES_DISCARDED) {
-                Serial.println("✅ [LoRa] PACCHETTO CONSEGNATO AL CLOUD!");
+                Serial.println(" [LoRa] PACCHETTO CONSEGNATO AL CLOUD!");
             } else {
-                Serial.printf("❌ [LoRa] Errore di invio radio. Codice: %d\n", state);
+                Serial.printf(" [LoRa] Errore di invio radio. Codice: %d\n", state);
             }
         }
     }
