@@ -7,11 +7,10 @@ TOPIC_DATA = "iot/sensor/data"
 TOPIC_ACK = "iot/sensor/ack"
 
 def on_connect(client, userdata, flags, rc):
-    print("✅ Server connesso. In ascolto dei dati...")
+    print(" Server connesso. In ascolto dei dati...")
     client.subscribe(TOPIC_DATA)
 
 def on_message(client, userdata, msg):
-    # t2: Istante esatto in cui il PC riceve il pacchetto
     t2 = int(time.time() * 1000) 
     
     try:
@@ -19,7 +18,7 @@ def on_message(client, userdata, msg):
         t1 = payload.get("t1")
         valore = payload.get("avg", payload.get("freq_hz", 0))
         
-        print(f"📦 Ricevuto {valore:.2f} Hz. Invio ACK all'ESP32...")
+        print(f" Ricevuto {valore:.2f} Hz. Invio ACK all'ESP32...")
         
         # t3: Istante esatto in cui il PC ha finito e sta per rispondere
         t3 = int(time.time() * 1000) 
