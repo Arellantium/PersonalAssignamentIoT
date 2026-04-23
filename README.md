@@ -1,4 +1,4 @@
-# Advanced Edge Computing and DSP for IoT: ESP32-S3 Sensor Node
+# First Assignament
 
 ## 0. Quick Start & Setup Guide
 
